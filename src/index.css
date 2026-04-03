@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  .stat-card {
+    @apply bg-gradient-to-br from-purple-600 to-indigo-600 text-white rounded-xl p-6 shadow-lg;
+  }
+  .gradient-border {
+    @apply border-2 border-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-border;
+  }
+}
